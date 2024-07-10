@@ -33,18 +33,6 @@
         "videos"
       ]
     },
-    "author": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::author.author",
-      "inversedBy": "articles"
-    },
-    "category": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::category.category",
-      "inversedBy": "articles"
-    },
     "blocks": {
       "type": "dynamiczone",
       "components": [
@@ -53,6 +41,12 @@
         "shared.rich-text",
         "shared.slider"
       ]
+    },
+    "tag": {
+      "type": "text"
+    },
+    "timeToRead": {
+      "type": "string"
     }
   }
 }
